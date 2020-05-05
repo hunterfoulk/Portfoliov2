@@ -4,7 +4,7 @@ import { useStateValue } from "./state";
 import "./app.scss";
 import Navbar from "./Navbar";
 import Homepage from "./Homepage";
-import ProjectModal from "./Projectmodal";
+import Footer from "./Footer";
 
 function App() {
   const [{ projects }, dispatch] = useStateValue();
@@ -15,6 +15,7 @@ function App() {
       <Router>
         <Navbar />
         <Homepage />
+        <Footer />
       </Router>
     </>
   );
