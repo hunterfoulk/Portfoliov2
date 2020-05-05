@@ -66,8 +66,8 @@ export default function Homepage() {
               needed in todays world. Since then I've shifted my learning and
               focuses to the web, thriving in fulfillment learning new and
               modern technologies of Full Stack Web Development such as modern
-              Javascript,HTML,CSS and frameworks such as Angular,React,Gatsby
-              and how far every programming language and other technologies have
+              Javascript, HTML , CSS and frameworks such as React, Gatsby and
+              how far every programming language and other technologies have
               come. Some of my hobbies outside of programming are daily
               exercising, hanging out with my also coding friends and just
               living everyday to the fullest!
