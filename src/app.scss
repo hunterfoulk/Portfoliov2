@@ -672,12 +672,14 @@
       justify-content: flex-end;
       p {
         font-size: 16px;
-        padding: 2px;
+        padding: 5px;
       }
       .demos {
         // margin-right: 5px;
+
         position: relative;
-        right: 40px;
+        right: 10px;
+
         top: 3px;
         text-align: center;
         width: 100%;
