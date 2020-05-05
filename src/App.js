@@ -24,7 +24,7 @@ function App() {
             path={project.route}
             key={i}
             render={() => (
-              <div className="lone-project-route">
+              <div className="project-route">
                 <ProjectRoutes project={project} />
               </div>
             )}

@@ -8,7 +8,7 @@ function Navbar() {
       <div className="nav-links">
         <div className="nav-left">
           <img src={portLogo} />
-          <span>HUNTER FOULK</span>
+          <p>HUNTER FOULK</p>
         </div>
         <div className="nav-right">
           <Link className="about-link" to="/about">

@@ -120,22 +120,22 @@ export default function Homepage({ project }) {
                 <div className="projects-cards-text">
                   <p>{card.description}</p>
                   <div className="demos">
-                    <button
-                      className="view-project-button"
-                      onClick={async () => {
-                        setContent(card);
-                        // if (!isMobile) setModal(true);
-                        setBackdrop(true);
-                      }}
-                    >
-                      {/* {isMobile ? (
-                        <Link to={project.route}>
-                          <div className="button-text">View project</div>
-                        </Link>
-                      ) : (
-                        <div className="button-text">View project</div>
-                      )} */}
-                    </button>
+                    {isMobile ? (
+                      <Link to={projects.route}>
+                        <div className="view-project-button">View project</div>
+                      </Link>
+                    ) : (
+                      <button
+                        className="view-project-button"
+                        onClick={async () => {
+                          setContent(card);
+                          if (!isMobile) setModal(true);
+                          setBackdrop(true);
+                        }}
+                      >
+                        View Project
+                      </button>
+                    )}
                     <button className="view-project-button">
                       View Sourcecode
                     </button>
