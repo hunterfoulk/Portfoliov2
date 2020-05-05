@@ -604,7 +604,7 @@
           font-size: 15px;
           margin: 0px;
           position: relative;
-          top: 2px;
+          top: 3px;
         }
         .projects-link {
           // position: relative;
@@ -657,7 +657,7 @@
     .projects-cards {
       // width: 470px;
       width: 100%;
-      height: 410px;
+      height: 440px;
       display: flex;
       flex-direction: column;
 
@@ -667,7 +667,7 @@
       }
     }
     .content-container {
-      padding: 1px;
+      padding-bottom: 11px;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -678,7 +678,7 @@
       justify-content: flex-end;
       p {
         font-size: 16px;
-        padding: 5px;
+        padding: 15px;
       }
       .demos {
         // margin-right: 5px;
