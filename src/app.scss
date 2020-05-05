@@ -49,6 +49,10 @@
         text-decoration: none;
         color: white;
       }
+      .resume-link {
+        text-decoration: none;
+        color: white;
+      }
       span {
         margin-left: 18px;
       }
@@ -589,17 +593,22 @@
   .navbar {
     .nav-links {
       margin: 0px;
+
       .nav-right {
         margin: 0px;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+
         .about-link {
           font-size: 15px;
           margin: 0px;
           position: relative;
-          top: 5px;
+          top: 2px;
         }
         .projects-link {
-          position: relative;
-          bottom: 2px;
+          // position: relative;
+          // bottom: 5px;
           margin: 0px;
         }
       }
@@ -612,10 +621,7 @@
         font-size: 15px;
         margin-left: 5px;
       }
-      .resume-link {
-        position: relative;
-        top: 6.5px;
-      }
+
       img {
         width: 35px;
         height: 35px;
@@ -713,7 +719,7 @@
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    padding-bottom: 40px;
+    padding-bottom: 60px;
 
     span {
       font-size: 11px;
@@ -723,12 +729,12 @@
       display: flex;
       flex-direction: row;
       margin-right: 8px;
-      margin-bottom: 5px;
+      margin-bottom: 10px;
     }
     .footer-logo {
       height: 45px;
       width: 45px;
-      margin-bottom: 5px;
+      margin-bottom: 10px;
     }
     .footer-buttons {
       font-size: 11px;
