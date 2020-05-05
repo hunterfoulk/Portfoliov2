@@ -19,7 +19,9 @@ export default function Homepage({ project }) {
           <h2 className="">Hunter Foulk</h2>
 
           <div className="header-line"></div>
-          <span>Software Engineer in Tucson, Arizona</span>
+          <span className="area-span">
+            Software Engineer in Tucson, Arizona
+          </span>
           <span className="email"> hunterfoulkdev@hotmail.com</span>
           <div className="buttons-container">
             <a
@@ -55,7 +57,7 @@ export default function Homepage({ project }) {
             <h1>About Me</h1>
           </div>
           <div className="aboutme-line"></div>
-          <div>
+          <div className="about-me-left-text">
             <p>
               {" "}
               Greetings, my name is Hunter! I'm a self taught Software Engineer
