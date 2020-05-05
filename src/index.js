@@ -33,7 +33,7 @@ let initialState = {
       tech: ["React", "Node/Express", "MongoDB", "HTML", "Sass"],
       plans:
         "I plan to add difficulty levels and multiple different game settings to cater to what area of skill you are trying to improve in",
-      route: "",
+      route: "/aimtraining",
     },
     {
       project: "AirBnB",
@@ -56,7 +56,7 @@ let initialState = {
       ],
       plans:
         "Possibly plan to add features where a user can pick a house of their staying desire and rent it for as long as they choose.",
-      route: "",
+      route: "/airbnb",
     },
     {
       project: "Fashion-App",
@@ -71,7 +71,7 @@ let initialState = {
       tech: ["React", "Node/Express", "MongoDB", "HTML", "CSS"],
       plans:
         "Looking to add and extend my knowledge and add a fully functional checkout system to the cart feature.",
-      route: "",
+      route: "/fashionapp",
     },
     {
       project: "MovieDB",
@@ -86,7 +86,7 @@ let initialState = {
       tech: ["React", "Redux/ Context API", "Ant-Design", "HTML", "CSS"],
       plans:
         "No real future plans the application is done and working as fully intended!",
-      route: "",
+      route: "/moviedb",
     },
     {
       project: "NeetChat",
@@ -108,7 +108,7 @@ let initialState = {
       ],
       plans:
         "Will restructure the private messages chat feature for fully functionally private messages to anyone else in the room you are in. ",
-      route: "",
+      route: "/neetchat",
     },
     {
       project: "Portfolio",

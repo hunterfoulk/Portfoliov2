@@ -5,6 +5,7 @@ import "./app.scss";
 import Navbar from "./Navbar";
 import Homepage from "./Homepage";
 import Footer from "./Footer";
+import { ProjectRoutes } from "./Projectroutes";
 
 function App() {
   const [{ projects }, dispatch] = useStateValue();
@@ -16,6 +17,19 @@ function App() {
         <Navbar />
         <Homepage />
         <Footer />
+
+        {/* MOBILE PROJECT ROUTE */}
+        {/* {projects.map((project, i) => (
+          <Route
+            path={project.route}
+            key={i}
+            render={() => (
+              <div className="lone-project-route">
+                <ProjectRoutes project={project} />
+              </div>
+            )}
+          ></Route>
+        ))} */}
       </Router>
     </>
   );

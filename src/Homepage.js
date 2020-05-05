@@ -2,12 +2,14 @@ import React, { useState } from "react";
 import LinkedIn from "./images/linkedIn.png";
 import { useStateValue } from "./state";
 import ProjectModal from "./Projectmodal";
+import { Link } from "react-router-dom";
 
-export default function Homepage() {
+export default function Homepage({ project }) {
   const [{ projects }] = useStateValue();
   const [modal, setModal] = useState(false);
   const [backdrop, setBackdrop] = useState(false);
   const [modalContent, setContent] = useState(projects[0]);
+  let isMobile = window.innerWidth <= 700;
 
   return (
     <div className="homepage-main">
@@ -119,14 +121,20 @@ export default function Homepage() {
                   <p>{card.description}</p>
                   <div className="demos">
                     <button
+                      className="view-project-button"
                       onClick={async () => {
                         setContent(card);
-                        setModal(true);
+                        // if (!isMobile) setModal(true);
                         setBackdrop(true);
                       }}
-                      className="view-project-button"
                     >
-                      View Project
+                      {/* {isMobile ? (
+                        <Link to={project.route}>
+                          <div className="button-text">View project</div>
+                        </Link>
+                      ) : (
+                        <div className="button-text">View project</div>
+                      )} */}
                     </button>
                     <button className="view-project-button">
                       View Sourcecode
