@@ -44,7 +44,7 @@ let initialState = {
       source: "",
       slides: [airbnbpic1, airbnbpic2, airbnbpic3],
       p1:
-        "Complete AirBnB clone that i put my spin on. Create an account and list your house with an image of your house with the location, number of baths and beds and the price of the house!",
+        "Complete AirBnB clone that i put my spin on. Create an account and list your house with an image of your house with the location,etc...!",
       tech: [
         "React",
         "Redux/Context API",
