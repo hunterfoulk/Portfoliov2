@@ -743,10 +743,12 @@
       display: flex;
       flex-direction: column;
       box-shadow: none;
-
+      .h2-text {
+        justify-content: center;
+      }
       .img-placeholder {
         margin-top: 2px;
-        width: 95%;
+        width: 97%;
         height: 65%;
       }
     }
