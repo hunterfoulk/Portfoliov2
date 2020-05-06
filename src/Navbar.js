@@ -10,8 +10,12 @@ function Navbar() {
     <div className="navbar">
       <div className="nav-links">
         <div className="nav-left">
-          <img src={portLogo} />
-          <p>HUNTER FOULK</p>
+          <Link to="/">
+            <img src={portLogo} />
+          </Link>
+          <Link className="nav-left-link" to="/">
+            <p>HUNTER FOULK</p>
+          </Link>
         </div>
         <div className="nav-right">
           <Link className="about-link" to="/about">

@@ -32,8 +32,14 @@
       display: flex;
       align-items: center;
       font-size: 24px;
-
+      text-decoration: none;
       width: 50%;
+      .nav-left-link {
+        color: white;
+        position: relative;
+        bottom: 2px;
+        text-decoration: none;
+      }
       span {
         margin-left: 15px;
       }
@@ -64,7 +70,7 @@
     img {
       width: 45px;
       height: 45px;
-      margin-right: 10px;
+      margin-right: 5px;
     }
   }
 }
