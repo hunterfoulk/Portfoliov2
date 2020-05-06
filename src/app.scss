@@ -662,6 +662,9 @@
 // MOBILE //
 @media (max-width: 700px) {
   .navbar {
+    .nav-left-link {
+      display: none;
+    }
     .hamburger {
       display: inline;
       font-size: 20px;
@@ -696,8 +699,10 @@
       }
 
       img {
-        width: 35px;
-        height: 35px;
+        width: 37px;
+        height: 37px;
+        position: relative;
+        top: 2px;
       }
     }
   }
@@ -833,6 +838,7 @@
   .route-main {
     .route-header {
       width: 98.5%;
+      margin-top: 2px;
     }
     .modal-para {
       padding: 10px 10px;
