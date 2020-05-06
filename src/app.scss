@@ -170,13 +170,14 @@
     border: 1px solid #0b8cd5;
     outline: none;
     position: relative;
+    bottom: 1px;
     color: white;
     font-weight: bold;
     border-radius: 4px;
     cursor: pointer;
     margin-left: 5px;
     padding-bottom: 6px;
-    padding-top: 7px;
+    padding-top: 6px;
     padding-left: 5px;
     box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2),
       0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
@@ -457,7 +458,6 @@
 .project-modal {
   position: fixed;
   background-color: rgb(247, 247, 247);
-
   color: black;
   left: 50%;
   top: 50%;
@@ -465,6 +465,7 @@
   width: 1000px;
   min-width: 500px;
   max-width: 1500px;
+  max-height: 1000px;
   overflow: hidden;
   border-radius: 10px;
   z-index: 501;
