@@ -14,7 +14,7 @@ export default function Projectmodal({ modalContent }) {
       <div className="project-modal">
         <div className="modal-header">{modalContent.project}</div>
 
-        <div style={{ padding: "0px 20px" }}>
+        <div className="route-caro" style={{ padding: "0px 20px" }}>
           <Carousel
             className="carousel"
             centered

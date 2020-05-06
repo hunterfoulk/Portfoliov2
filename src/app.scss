@@ -64,6 +64,7 @@
     img {
       width: 45px;
       height: 45px;
+      margin-right: 10px;
     }
   }
 }
@@ -111,6 +112,7 @@
   }
   h2 {
     font-size: 45px;
+
     width: 100;
     margin-top: 5px;
     margin-bottom: 15px;
@@ -318,8 +320,8 @@
   align-items: center;
   width: 100%;
   height: auto;
-  // z-index: 500;
   margin-top: 55px;
+  margin-bottom: 25px;
 
   .project-h1 {
     text-align: center;
@@ -616,6 +618,41 @@
   }
 }
 
+.project-component-main {
+  overflow: hidden;
+  @media (max-width: 700px) {
+    margin: 30px 0px 0px 0px;
+    padding: 0px 0px 30px 0px;
+  }
+}
+
+.route-main {
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+  background-color: rgb(216, 216, 216);
+  // height: 500px;
+  .route-header {
+    display: flex;
+    justify-content: center;
+    height: 40px;
+    width: 100%;
+    font-size: 30px;
+    // margin-top: 2px;
+    border: 3px solid rgb(24, 93, 153);
+    color: white;
+    background-color: #303030;
+  }
+  .route-caro {
+    // background-color: purple;
+    width: 97%;
+    margin-left: 5px;
+    img {
+      width: 100%;
+    }
+  }
+}
+
 // MOBILE //
 @media (max-width: 700px) {
   .navbar {
@@ -631,10 +668,6 @@
       margin: 0px;
 
       .nav-right {
-        // margin: 0px;
-        // display: flex;
-        // align-items: center;
-        // flex-direction: row;
         display: none;
         .about-link {
           font-size: 15px;
@@ -643,8 +676,6 @@
           top: 3px;
         }
         .projects-link {
-          // position: relative;
-          // bottom: 5px;
           margin: 0px;
         }
       }
@@ -737,8 +768,7 @@
       }
       .list {
         margin-right: 83px;
-
-        // text-align: center;
+        width: 100%;
 
         li {
           font-size: 17px;
@@ -753,6 +783,8 @@
   }
   .footer-container {
     display: flex;
+    position: relative;
+    bottom: 0;
     justify-content: space-between;
     flex-direction: column;
     padding-bottom: 60px;
@@ -789,6 +821,15 @@
     }
     .area-span {
       font-size: 19px;
+    }
+  }
+  .route-main {
+    .modal-para {
+      padding: 10px 10px;
+      margin-bottom: 15px;
+      h1 {
+        font-size: 20px;
+      }
     }
   }
 }

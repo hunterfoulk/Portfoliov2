@@ -15,22 +15,31 @@ function App() {
     <>
       <Router>
         <Navbar />
-        <Homepage />
-        <Footer />
+        {/* <Homepage /> */}
+
+        {/* HOME ROUTE */}
+        <Route
+          exact
+          path="/"
+          render={() => (
+            <>
+              {" "}
+              <Homepage />
+            </>
+          )}
+        ></Route>
 
         {/* MOBILE PROJECT ROUTE */}
-        {/* {projects.map((project, i) => (
+        {projects.map((project, i) => (
           <Route
+            exact
             path={project.route}
             key={i}
-            render={() => (
-              <div className="project-route">
-                <ProjectRoutes project={project} />
-              </div>
-            )}
+            render={() => <ProjectRoutes project={project} />}
           ></Route>
-        ))} */}
+        ))}
       </Router>
+      <Footer />
     </>
   );
 }

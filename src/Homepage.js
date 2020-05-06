@@ -125,10 +125,17 @@ export default function Homepage({ project }) {
                     <button
                       className="view-project-button"
                       onClick={async () => {
-                        setContent(card);
-                        // if (!isMobile) setModal(true);
-                        setModal(true);
-                        setBackdrop(true);
+                        if (isMobile) {
+                          window.location.href = `${card.route}`;
+                        } else if (
+                          !isMobile &&
+                          window.location.pathname === "/"
+                        ) {
+                          setModal(true);
+                          setBackdrop(true);
+                        } else {
+                          window.location.href = `${card.route}`;
+                        }
                       }}
                     >
                       View Project
@@ -141,7 +148,8 @@ export default function Homepage({ project }) {
                         <div className="view-project-button">View project</div>
                       </Link>
                     ) : (
-                      
+                       setModal(true);
+                        setBackdrop(true);
                     )} */}
                   </div>
                 </div>

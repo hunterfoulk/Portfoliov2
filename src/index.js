@@ -38,7 +38,7 @@ let initialState = {
     {
       project: "AirBnB",
       description:
-        "Complete AirBnB clone that i put my spin and style on. Create an account and list your house with all of its features! ",
+        "Complete AirBnB clone that i put my spin and style on. Create an account and list your house with all its features! ",
       thumbnail: airbnbpic1,
       demo: "",
       source: "",
@@ -118,7 +118,7 @@ let initialState = {
       demo: "",
       source: "",
       slides: "",
-      route: "",
+      route: "/project",
     },
   ],
 };
