@@ -667,8 +667,12 @@
     }
     .hamburger {
       display: inline;
-      font-size: 20px;
       margin-right: 10px;
+      position: relative;
+      bottom: 1px;
+      .hamburger-icon {
+        font-size: 22px;
+      }
     }
     .navdropdown {
       display: inline;

@@ -29,7 +29,7 @@ function Navbar() {
           </Link>
         </div>
         <div className="hamburger" onClick={() => setDropdown(!dropdown)}>
-          <p>☰</p>
+          <p className="hamburger-icon">☰</p>
         </div>
         {dropdown && (
           <>
