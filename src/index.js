@@ -38,13 +38,13 @@ let initialState = {
     {
       project: "AirBnB",
       description:
-        "Complete AirBnB clone that i put my spin and style on. Create an account and list your house with an image of your house with the location, number of baths and beds and the price of the house! ",
+        "Complete AirBnB clone that i put my spin and style on. Create an account and list your house with an image of your house with all its features! ",
       thumbnail: airbnbpic1,
       demo: "",
       source: "",
       slides: [airbnbpic1, airbnbpic2, airbnbpic3],
       p1:
-        "Complete AirBnB clone that i put my spin on. Create an account and list your house with an image of your house with the location,etc...!",
+        "Complete AirBnB clone that i put my spin and style on. Create an account and list your house with an image of your house with the location, number of baths and beds and the price of the house!",
       tech: [
         "React",
         "Redux/Context API",
