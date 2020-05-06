@@ -18,6 +18,10 @@
     2px 2px 5px 0px rgba(85, 83, 83, 0.12);
   padding: 5px;
   border-bottom: 1px solid rgba(70, 70, 70, 0.397);
+  .hamburger {
+    display: none;
+  }
+
   .nav-links {
     display: flex;
     align-items: center;
@@ -120,6 +124,8 @@
   }
   .email {
     font-size: 18px;
+    // padding-bottom: 32px;
+    margin: 0px;
     letter-spacing: 0.05rem;
   }
   .header-line {
@@ -588,18 +594,47 @@
   }
 }
 
+.navdropdown {
+  // display: flex;
+  text-align: center;
+  position: fixed;
+  top: 45px;
+  right: 0;
+  width: 100%;
+  padding: 10px;
+  z-index: 1001;
+  box-shadow: 0px 10px 10px -10px black;
+  background-color: #303030;
+  a {
+    text-decoration: none;
+  }
+  p {
+    padding: 15px;
+    text-decoration: none;
+    color: white;
+  }
+}
+
 // MOBILE //
 @media (max-width: 700px) {
   .navbar {
+    .hamburger {
+      display: inline;
+      font-size: 20px;
+      margin-right: 10px;
+    }
+    .navdropdown {
+      display: inline;
+    }
     .nav-links {
       margin: 0px;
 
       .nav-right {
-        margin: 0px;
-        display: flex;
-        align-items: center;
-        flex-direction: row;
-
+        // margin: 0px;
+        // display: flex;
+        // align-items: center;
+        // flex-direction: row;
+        display: none;
         .about-link {
           font-size: 15px;
           margin: 0px;

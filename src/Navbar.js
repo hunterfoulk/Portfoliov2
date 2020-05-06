@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import portLogo from "./images/hf-logo.png";
 import { Link } from "react-router-dom";
+import Navdropdown from "./Navdropdown";
 
 function Navbar() {
+  const [dropdown, setDropdown] = useState(false);
+
   return (
     <div className="navbar">
       <div className="nav-links">
@@ -21,6 +24,14 @@ function Navbar() {
             <span>Resume</span>
           </Link>
         </div>
+        <div className="hamburger" onClick={() => setDropdown(!dropdown)}>
+          <p>☰</p>
+        </div>
+        {dropdown && (
+          <>
+            <Navdropdown dropdown={dropdown} setDropdown={setDropdown} />
+          </>
+        )}
       </div>
     </div>
   );
