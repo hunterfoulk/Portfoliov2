@@ -215,9 +215,9 @@
     text-decoration: none;
     margin-top: 20px;
     margin-bottom: 15px;
-    font-size: 20px;
+    font-size: 18px;
     cursor: pointer;
-    padding: 11.5px 18px;
+    padding: 9.5px 15px;
     padding-right: 12px;
     color: black;
     font-family: "Lato", sans-serif;
@@ -229,6 +229,7 @@
   }
   .projects-button span {
     color: black;
+    font-size: 20px;
   }
   .projects-button:hover {
     transform: translateY(-0.3rem);
@@ -365,6 +366,7 @@
   height: 230px;
   margin-bottom: 30px;
   background-color: rgba(233, 233, 233, 0.726);
+
   .img-placeholder {
     height: 100%;
     width: 35%;
@@ -381,10 +383,8 @@
   .view-project-button {
     padding: 5px 5px;
     background-color: #303030;
-    // background-color: transparent;
     border: 2px solid rgb(24, 93, 153);
     border-radius: 4px;
-    // color: rgb(24, 93, 153);
     color: rgb(238, 238, 238);
     font-weight: bold;
     font-size: 15px;
@@ -406,12 +406,12 @@
     color: rgb(24, 93, 153);
     display: flex;
     justify-content: flex-end;
+    margin-right: 10px;
     font-size: 20px;
     font-weight: bold;
     font-family: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI",
       Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
       "Segoe UI Symbol";
-
     margin-bottom: 5px;
     span {
       margin-left: 10%;
@@ -439,13 +439,12 @@
     height: 40px;
     border-top-right-radius: 5px;
     background-color: #303030;
-
+    border-top: 3px solid rgb(20, 87, 145);
     justify-content: flex-end;
     h2 {
       margin-right: 5px;
       font-size: 27px;
       color: rgb(49, 132, 204);
-      // color: white;
       font-weight: 900;
     }
   }
@@ -508,6 +507,11 @@
     text-align: center;
     position: relative;
     top: 15px;
+    .no-demo {
+      font-size: 15px;
+      color: rgb(224, 53, 53);
+      margin-top: 2px;
+    }
     .button-one {
       padding: 10px 10px;
       background-color: rgb(24, 93, 153);
@@ -554,7 +558,6 @@
   margin: 25px 0px;
 }
 .carousel img {
-  // width: 150px;
   height: 215px;
 }
 .angle-double-left {
@@ -604,7 +607,6 @@
 }
 
 .navdropdown {
-  // display: flex;
   text-align: center;
   position: absolute;
   top: 45px;
@@ -637,14 +639,12 @@
   overflow: hidden;
   flex-direction: column;
   background-color: rgb(216, 216, 216);
-  // height: 500px;
   .route-header {
     display: flex;
     justify-content: center;
     height: 40px;
     width: 100%;
     font-size: 30px;
-    // margin-top: 2px;
     border: 3px solid rgb(24, 93, 153);
     color: white;
     background-color: #303030;
@@ -788,7 +788,7 @@
         width: 70%;
       }
       .list {
-        margin-right: 50px;
+        margin-right: 60px;
         // margin-left:
         width: 90%;
 

@@ -26,7 +26,7 @@ let initialState = {
         "First person shooter game built in the browser to help players work on increasing their accuracy and reaction time. ",
       thumbnail: aimpic1,
       demo: "",
-      source: "",
+      source: "https://github.com/hunterfoulk/Aim-Training",
       slides: [aimpic1, aimpic2, aimpic3],
       p1:
         "First person shooter game aim trainer and reaction time builder built meant to help you react faster and improve your percise aim. Try and beat your highest score to get better!",
@@ -34,6 +34,7 @@ let initialState = {
       plans:
         "I plan to add difficulty levels and multiple different game settings to cater to what area of skill you are trying to improve in",
       route: "/aimtraining",
+      nodemo: "",
     },
     {
       project: "AirBnB",
@@ -41,7 +42,7 @@ let initialState = {
         "Complete AirBnB clone that i put my spin and style on. Create an account and list your house with all its features! ",
       thumbnail: airbnbpic1,
       demo: "",
-      source: "",
+      source: "https://github.com/hunterfoulk/AirBnb",
       slides: [airbnbpic1, airbnbpic2, airbnbpic3],
       p1:
         "Complete AirBnB clone that i put my spin and style on. Create an account and list your house with an image of your house with the location, number of baths and beds and the price of the house!",
@@ -64,7 +65,7 @@ let initialState = {
         "My fashionable e-commerce clothing brand website built to show off mens and womens fashion products.",
       thumbnail: fashionapp2,
       demo: "",
-      source: "",
+      source: "https://github.com/hunterfoulk/E-commerce-app",
       slides: [fashionapp1, fashionapp2, fashionapp3],
       p1:
         "Fashionble e-commerce clothing brand application you can search for and browse mens and womens stylish clothes before checking out.",
@@ -72,6 +73,7 @@ let initialState = {
       plans:
         "Looking to add and extend my knowledge and add a fully functional checkout system to the cart feature.",
       route: "/fashionapp",
+      nodemo: "Demo currently unavaible",
     },
     {
       project: "MovieDB",
@@ -79,7 +81,7 @@ let initialState = {
         "Movie lookup and search using the IMDB api showing mulitple details about each movie you want to know about. ",
       thumbnail: movieapp1,
       demo: "",
-      source: "",
+      source: "https://github.com/hunterfoulk/MovieDB",
       slides: [movieapp1, movieapp2, movieapp3],
       p1:
         "Search your favorite movie or movies and view the details,description and rating of that movie!",
@@ -94,7 +96,7 @@ let initialState = {
         "Chatroom application where users can create and join or create a chatroom and hangout together. ",
       thumbnail: neetchat3,
       demo: "",
-      source: "",
+      source: "https://github.com/hunterfoulk/Neet-Chat",
       slides: [neetchat1, neetchat2, neetchat3],
       p1:
         "Chatroom application where users can create and join or create a chatroom and tell your everyone what room your in so they can join and hangout as well ",
@@ -109,6 +111,7 @@ let initialState = {
       plans:
         "Will restructure the private messages chat feature for fully functionally private messages to anyone else in the room you are in. ",
       route: "/neetchat",
+      nodemo: "Demo currently unavaible",
     },
     {
       project: "Portfolio",

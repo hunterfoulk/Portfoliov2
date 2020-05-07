@@ -98,6 +98,7 @@ export default function Homepage({ project }) {
       <div className="projects-section-main" id="projects-section-main">
         <div className="project-card-container">
           <h1 className="project-h1">Projects</h1>
+
           {modal && (
             <>
               <div className="backdrop" onClick={() => setModal(false)}></div>
@@ -132,6 +133,7 @@ export default function Homepage({ project }) {
                           window.location.pathname === "/"
                         ) {
                           setModal(true);
+                          setContent(card);
                           setBackdrop(true);
                         } else {
                           window.location.href = `${card.route}`;
@@ -140,17 +142,15 @@ export default function Homepage({ project }) {
                     >
                       View Project
                     </button>
-                    <button className="view-project-button">
-                      View Sourcecode
-                    </button>
-                    {/* {isMobile ? (
-                      <Link to={projects.route}>
-                        <div className="view-project-button">View project</div>
-                      </Link>
-                    ) : (
-                       setModal(true);
-                        setBackdrop(true);
-                    )} */}
+                    <a
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href={card.source}
+                    >
+                      <button className="view-project-button">
+                        View Sourcecode
+                      </button>
+                    </a>
                   </div>
                 </div>
               </div>

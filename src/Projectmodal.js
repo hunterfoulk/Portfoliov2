@@ -33,10 +33,13 @@ export default function Projectmodal({ modalContent }) {
         </div>
         <div className="modal-button-container">
           <button className="button-one">View Demo</button>
+
           <button className="button-two">
             <FaGithub className="button-two-github" />
             Sourcecode
           </button>
+
+          <p className="no-demo">{modalContent.nodemo}</p>
         </div>
         <div className="modal-para">
           <h1>Details</h1>
