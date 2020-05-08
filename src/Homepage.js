@@ -123,25 +123,27 @@ export default function Homepage({ project }) {
                 <div className="projects-cards-text">
                   <p>{card.description}</p>
                   <div className="demos">
-                    <button
-                      className="view-project-button"
-                      onClick={async () => {
-                        if (isMobile) {
-                          window.location.href = `${card.route}`;
-                        } else if (
-                          !isMobile &&
-                          window.location.pathname === "/"
-                        ) {
-                          setModal(true);
-                          setContent(card);
-                          setBackdrop(true);
-                        } else {
-                          window.location.href = `${card.route}`;
-                        }
-                      }}
-                    >
-                      View Project
-                    </button>
+                    <a>
+                      <button
+                        className="view-project-button"
+                        onClick={async () => {
+                          if (isMobile) {
+                            window.location.href = `${card.route}`;
+                          } else if (
+                            !isMobile &&
+                            window.location.pathname === "/"
+                          ) {
+                            setModal(true);
+                            setContent(card);
+                            setBackdrop(true);
+                          } else {
+                            window.location.href = `${card.route}`;
+                          }
+                        }}
+                      >
+                        View Project
+                      </button>
+                    </a>
                     <a
                       target="_blank"
                       rel="noopener noreferrer"
