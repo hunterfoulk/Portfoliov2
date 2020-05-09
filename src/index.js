@@ -25,7 +25,7 @@ let initialState = {
       description:
         "First person shooter game built in the browser to help players work on increasing their accuracy and reaction time. ",
       thumbnail: aimpic1,
-      demo: "",
+      demo: "https://keen-pike-e36229.netlify.app",
       source: "https://github.com/hunterfoulk/Aim-Training",
       slides: [aimpic1, aimpic2, aimpic3],
       p1:
@@ -41,7 +41,7 @@ let initialState = {
       description:
         "Complete AirBnB clone that i put my spin and style on. Create an account and list your house with all its features! ",
       thumbnail: airbnbpic1,
-      demo: "",
+      demo: "https://h-airbnb.netlify.app",
       source: "https://github.com/hunterfoulk/AirBnb",
       slides: [airbnbpic1, airbnbpic2, airbnbpic3],
       p1:
@@ -80,7 +80,7 @@ let initialState = {
       description:
         "Movie lookup and search using the IMDB api showing mulitple details about each movie you want to know about. ",
       thumbnail: movieapp1,
-      demo: "",
+      demo: "https://loving-panini-badab5.netlify.app",
       source: "https://github.com/hunterfoulk/MovieDB",
       slides: [movieapp1, movieapp2, movieapp3],
       p1:

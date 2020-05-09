@@ -32,12 +32,20 @@ export default function Projectmodal({ modalContent }) {
           </Carousel>
         </div>
         <div className="modal-button-container">
-          <button className="button-one">View Demo</button>
+          <a target="_blank" rel="noopener noreferrer" href={modalContent.demo}>
+            <button className="button-one">View Demo</button>
+          </a>
 
-          <button className="button-two">
-            <FaGithub className="button-two-github" />
-            Sourcecode
-          </button>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href={modalContent.source}
+          >
+            <button className="button-two">
+              <FaGithub className="button-two-github" />
+              Sourcecode
+            </button>
+          </a>
 
           <p className="no-demo">{modalContent.nodemo}</p>
         </div>

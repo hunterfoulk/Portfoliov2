@@ -18,15 +18,23 @@ function Navbar() {
           </Link>
         </div>
         <div className="nav-right">
-          <Link className="about-link" to="/about">
-            <span>About</span>
-          </Link>
-          <Link className="projects-link" to="/projects">
-            <span>Projects</span>
-          </Link>
-          <Link className="resume-link" to="/projects">
-            <span>Resume</span>
-          </Link>
+          <span
+            onClick={() => {
+              window.scrollTo(555, 555);
+            }}
+          >
+            About
+          </span>
+
+          <span
+            onClick={() => {
+              window.scrollTo(1635, 1635);
+            }}
+          >
+            Projects
+          </span>
+
+          <span>Resume</span>
         </div>
         <div className="hamburger" onClick={() => setDropdown(!dropdown)}>
           <p className="hamburger-icon">☰</p>
