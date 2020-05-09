@@ -5,10 +5,18 @@ export default function Navdropdown({}) {
   //   useLockBodyScroll();
   return (
     <div className="navdropdown">
-      <a href="/about">
+      <a
+        onClick={() => {
+          window.scrollTo(550, 550);
+        }}
+      >
         <p>About</p>
       </a>
-      <a href="/projects">
+      <a
+        onClick={() => {
+          window.scrollTo(1610, 1610);
+        }}
+      >
         <p>Projects</p>
       </a>
       <a href="/">
