@@ -22,7 +22,7 @@ export default function Homepage({ project }) {
           <span className="area-span">
             Software Engineer in Tucson, Arizona
           </span>
-          <span className="email"> hunterfoulkdev@hotmail.com</span>
+          <span className="email"> hunterfoulkdev@gmail.com</span>
           <div className="buttons-container">
             <a
               target="_blank"
@@ -82,15 +82,34 @@ export default function Homepage({ project }) {
 
       <div className="technical-section-main">
         <div className="aboutme-right">
-          <h1>Technical Experience</h1>
+          <h1>Technical Skills</h1>
           <div className="tech-line"></div>
-          <h2>Skills</h2>
+
           <div className="list">
-            <li>2+ years HTML, CSS, JavaScript</li>
-            <li>1+ year React, Node.js,Express</li>
-            <li>Relational Databases:MySQL, PostgreSQL</li>
-            <li>Non-relational Databases: MongoDB</li>
-            <li>Cloud Platforms: Netlify & AWS & Azure</li>
+            <div className="front-end">
+              <h3>Front-End</h3>
+              <li>React</li>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+            </div>
+            <div className="front-end">
+              <h3>Back-End</h3>
+              <li>Nodejs</li>
+              <li>Express</li>
+            </div>
+            <div className="front-end">
+              <h3>Databases</h3>
+              <li>SQL</li>
+              <li>PostgreSQL</li>
+              <li>MongoDB</li>
+            </div>
+            <div className="front-end">
+              <h3>Cloud Platforms</h3>
+              <li>AWS</li>
+              <li>AWS RDS</li>
+              <li>AWS S3 Bucket</li>
+            </div>
           </div>
         </div>
       </div>
