@@ -17,25 +17,12 @@ import movieapp3 from "./images/movieapp3.PNG";
 import neetchat1 from "./images/neetchat1.PNG";
 import neetchat2 from "./images/neetchat2.PNG";
 import neetchat3 from "./images/neetchat3.PNG";
+import trellopic1 from "./images/trellopic1.PNG";
+import trellopic2 from "./images/trellopic2.PNG";
+import trellopic3 from "./images/trellopic3.PNG";
 
 let initialState = {
   projects: [
-    {
-      project: "Aim-Training",
-      description:
-        "First person shooter game built in the browser to help players work on increasing their accuracy and reaction time. ",
-      thumbnail: aimpic1,
-      demo: "https://keen-pike-e36229.netlify.app",
-      source: "https://github.com/hunterfoulk/Aim-Training",
-      slides: [aimpic1, aimpic2, aimpic3],
-      p1:
-        "First person shooter game aim trainer and reaction time builder built meant to help you react faster and improve your percise aim. Try and beat your highest score to get better!",
-      tech: ["React", "Node/Express", "MongoDB", "HTML", "Sass"],
-      plans:
-        "I plan to add difficulty levels and multiple different game settings to cater to what area of skill you are trying to improve in",
-      route: "/aimtraining",
-      nodemo: "",
-    },
     {
       project: "AirBnB",
       description:
@@ -60,6 +47,44 @@ let initialState = {
       route: "/airbnb",
     },
     {
+      project: "Aim-Training",
+      description:
+        "First person shooter game built in the browser to help players work on increasing their accuracy and reaction time. ",
+      thumbnail: aimpic1,
+      demo: "https://keen-pike-e36229.netlify.app",
+      source: "https://github.com/hunterfoulk/Aim-Training",
+      slides: [aimpic1, aimpic2, aimpic3],
+      p1:
+        "First person shooter game aim trainer and reaction time builder built meant to help you react faster and improve your percise aim. Try and beat your highest score to get better!",
+      tech: ["React", "Node/Express", "MongoDB", "HTML", "Sass"],
+      plans:
+        "I plan to add difficulty levels and multiple different game settings to cater to what area of skill you are trying to improve in",
+      route: "/aimtraining",
+      nodemo: "",
+    },
+    {
+      project: "Trello",
+      description:
+        "Trello board i made for employees of the company to keep track of tasks and work flow.",
+      thumbnail: trellopic2,
+      demo: "https://ecstatic-bartik-098f59.netlify.app",
+      source: "https://github.com/hunterfoulk/Trello",
+      slides: [trellopic1, trellopic2, trellopic3],
+      p1:
+        "Trello board made for employees to create tasks they are working on that week showing the status of the task whether it is finished or not and also who is working on the task or what team is working on the task. Each employee can log in and get assigned their own cool profile picture!  ",
+      tech: [
+        "React",
+        "Node/Express",
+        "Redux/ Context API",
+        "PostgreSQL",
+        "HTML",
+        "Scss",
+      ],
+      plans:
+        "Will further the UI design and add a feature to where employees can add pictures of themselves as their profile pictures if they choose. ",
+      route: "/trello",
+    },
+    {
       project: "Fashion-App",
       description:
         "My fashionable e-commerce clothing brand website built to show off mens and womens fashion products.",
@@ -74,21 +99,6 @@ let initialState = {
         "Looking to add and extend my knowledge and add a fully functional checkout system to the cart feature.",
       route: "/fashionapp",
       nodemo: "Demo currently unavaible",
-    },
-    {
-      project: "MovieDB",
-      description:
-        "Movie lookup and search using the IMDB api showing mulitple details about each movie you want to know about. ",
-      thumbnail: movieapp1,
-      demo: "https://loving-panini-badab5.netlify.app",
-      source: "https://github.com/hunterfoulk/MovieDB",
-      slides: [movieapp1, movieapp2, movieapp3],
-      p1:
-        "Search your favorite movie or movies and view the details,description and rating of that movie!",
-      tech: ["React", "Redux/ Context API", "Ant-Design", "HTML", "CSS"],
-      plans:
-        "No real future plans the application is done and working as fully intended!",
-      route: "/moviedb",
     },
     {
       project: "NeetChat",
@@ -113,15 +123,21 @@ let initialState = {
       route: "/neetchat",
       nodemo: "Demo currently unavaible",
     },
+
     {
-      project: "Portfolio",
+      project: "MovieDB",
       description:
-        "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature  ",
-      thumbnail: "",
-      demo: "",
-      source: "",
-      slides: "",
-      route: "/project",
+        "Movie lookup and search using the IMDB api showing mulitple details about each movie you want to know about. ",
+      thumbnail: movieapp1,
+      demo: "https://loving-panini-badab5.netlify.app",
+      source: "https://github.com/hunterfoulk/MovieDB",
+      slides: [movieapp1, movieapp2, movieapp3],
+      p1:
+        "Search your favorite movie or movies and view the details,description and rating of that movie!",
+      tech: ["React", "Redux/ Context API", "Ant-Design", "HTML", "CSS"],
+      plans:
+        "No real future plans the application is done and working as fully intended!",
+      route: "/moviedb",
     },
   ],
 };

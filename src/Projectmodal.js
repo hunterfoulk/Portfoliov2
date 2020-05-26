@@ -11,7 +11,7 @@ export default function Projectmodal({ modalContent }) {
   useLockBodyScroll();
   return (
     <>
-      <div className="project-modal">
+      <div className="project-modal scrollbar">
         <div className="modal-header">{modalContent.project}</div>
 
         <div className="route-caro" style={{ padding: "0px 20px" }}>
