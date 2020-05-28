@@ -7,6 +7,7 @@ import Homepage from "./Homepage";
 import Footer from "./Footer";
 import { ProjectRoutes } from "./Projectroutes";
 
+
 function App() {
   const [{ projects }, dispatch] = useStateValue();
   const [modalOpen, openModal] = useState(false);

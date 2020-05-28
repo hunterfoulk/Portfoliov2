@@ -28,7 +28,7 @@ function Navbar() {
 
           <span
             onClick={() => {
-              window.scrollTo(1635, 1635);
+              window.scrollTo(1600, 1600);
             }}
           >
             Projects

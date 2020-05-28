@@ -141,7 +141,6 @@
   }
   h2 {
     font-size: 45px;
-
     width: 100;
     margin-top: 5px;
     margin-bottom: 15px;
@@ -314,7 +313,7 @@
     // background-color: rgb(88, 175, 88);
 
     .tech-line {
-      width: 20%;
+      width: 15%;
       margin-top: 5px;
       //   border-bottom: 1px solid rgb(240, 238, 238);
       border-bottom: 1px solid black;
@@ -376,10 +375,11 @@
     font-weight: 500;
     font-size: 45px;
     color: rgb(43, 124, 196);
-    border-top: 3px solid rgb(24, 93, 153);
-    border-right: 3px solid rgb(24, 93, 153);
-    border-left: 3px solid rgb(24, 93, 153);
-    border-bottom: 3px solid rgb(24, 93, 153);
+    // border-top: 3px solid rgb(24, 93, 153);
+    // border-right: 3px solid rgb(24, 93, 153);
+    // border-left: 3px solid rgb(24, 93, 153);
+    // border-bottom: 3px solid rgb(24, 93, 153);
+    border-radius: 4px;
 
     // margin-left: 16px;
     font-family: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI",
@@ -477,7 +477,7 @@
     height: 40px;
     border-top-right-radius: 5px;
     background-color: #303030;
-    border-top: 3px solid rgb(20, 87, 145);
+    // border-top: 3px solid rgb(20, 87, 145);
     justify-content: flex-end;
     h2 {
       margin-right: 5px;
@@ -528,6 +528,7 @@
     text-align: center;
     color: white;
     background-color: #303030;
+    border-top: 1px solid #303030;
     font-size: 50px;
     margin-bottom: 15px;
     padding: 5px;
