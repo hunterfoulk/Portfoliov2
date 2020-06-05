@@ -1,9 +1,39 @@
 import React, { useState } from "react";
 import { MdClose } from "react-icons/md";
 import useLockBodyScroll from "./bodyScroll";
+import axios from "axios";
 
 export default function NavbarModal({ setModal }) {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
   useLockBodyScroll();
+
+  const sendEmail = async (e) => {
+    e.preventDefault();
+
+    await axios
+      .post(
+        "http://localhost:9000/.netlify/functions/server/portfolio/sendemail",
+        {
+          name: name,
+          email: email,
+          message: message,
+        }
+      )
+      .then((res) => {
+        console.log("server response", res);
+        console.log("email has been sent");
+      })
+      .catch((error) =>
+        console.error("new job post was not succesfull:", error)
+      );
+
+    setName("");
+    setEmail("");
+    setMessage("");
+  };
+
   return (
     <div className="backdrop">
       <div className="nav-modal">
@@ -13,11 +43,44 @@ export default function NavbarModal({ setModal }) {
         <div className="nav-modal-header">
           <h1>Contact</h1>
         </div>
-        <form>
-          <input placeholder="Name..."></input>
-          <input placeholder="Email..."></input>
-          <textarea placeholder="Message..." rows="4" cols="50"></textarea>
-          <button>Send Email</button>
+        <form
+          onSubmit={(e) => {
+            sendEmail(e);
+          }}
+        >
+          <input
+            value={name}
+            onChange={(e) => {
+              setName(e.target.value);
+              console.log(e.target.value);
+            }}
+            placeholder="Name..."
+          ></input>
+          <input
+            value={email}
+            onChange={(e) => {
+              setEmail(e.target.value);
+              console.log(e.target.value);
+            }}
+            placeholder="Email..."
+          ></input>
+          <textarea
+            value={message}
+            onChange={(e) => {
+              setMessage(e.target.value);
+              console.log(e.target.value);
+            }}
+            placeholder="Message..."
+            rows="4"
+            cols="50"
+          ></textarea>
+          <button
+            onClick={(e) => {
+              sendEmail(e);
+            }}
+          >
+            Send Email
+          </button>
         </form>
       </div>
     </div>
