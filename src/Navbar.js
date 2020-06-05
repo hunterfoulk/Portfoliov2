@@ -3,11 +3,15 @@ import portLogo from "./images/hf-logo.png";
 import { Link } from "react-router-dom";
 import Navdropdown from "./Navdropdown";
 
+import NavbarModal from "./NavbarModal";
+
 function Navbar() {
   const [dropdown, setDropdown] = useState(false);
+  const [modal, setModal] = useState(false);
 
   return (
     <div className="navbar">
+      {modal && <NavbarModal setModal={setModal} />}
       <div className="nav-links">
         <div className="nav-left">
           <Link to="/">
@@ -18,13 +22,7 @@ function Navbar() {
           </Link>
         </div>
         <div className="nav-right">
-          <span
-            onClick={() => {
-              window.scrollTo(555, 555);
-            }}
-          >
-            About
-          </span>
+          <span onClick={() => setModal(!modal)}>Contact</span>
 
           <span
             onClick={() => {

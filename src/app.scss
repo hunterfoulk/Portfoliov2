@@ -39,6 +39,115 @@
     2px 2px 5px 0px rgba(85, 83, 83, 0.12);
   padding: 5px;
   border-bottom: 1px solid rgba(70, 70, 70, 0.397);
+  .backdrop {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba($color: black, $alpha: 0.5);
+  }
+  .nav-modal {
+    display: flex;
+    z-index: 500;
+    -webkit-transition: ease-in-out;
+    transition: ease-in-out;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    z-index: 200;
+    width: 50vh;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%);
+    margin-top: 45px;
+    padding: 10px 10px 20px 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top: 3px solid #303030;
+    border-left: 3px solid #303030;
+    border-right: 3px solid #303030;
+    border-bottom: 3px solid #303030;
+    background-color: #f5f5f5;
+    .modal-close {
+      // background-color: red;
+      width: 100%;
+      .md-close {
+        color: black;
+        float: right;
+        font-size: 22px;
+        text-align: right;
+        cursor: pointer;
+      }
+    }
+
+    .nav-modal-header {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      margin-bottom: 10px;
+      // border-bottom: 2px solid #0b8cd5;
+
+      h1 {
+        color: black;
+        text-align: center;
+        width: 60%;
+        margin-bottom: 3px;
+        border-bottom: 2px solid #0b8cd5;
+      }
+    }
+    form {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      max-width: 90%;
+      input {
+        margin-bottom: 10px;
+        outline: none;
+        min-height: 30px;
+        width: 100%;
+        border: 1px solid grey;
+        border-radius: 5px;
+        padding-left: 5px;
+        font-size: 15px;
+      }
+      input:focus::placeholder {
+        color: transparent;
+      }
+      textarea {
+        resize: none;
+        min-height: 150px;
+        font-size: 15px;
+        outline: none;
+        padding-left: 5px;
+        padding-top: 3px;
+        max-width: 100%;
+        border: 1px solid grey;
+      }
+      textarea:focus::placeholder {
+        color: transparent;
+      }
+      button {
+        text-align: center;
+        width: 100px;
+        margin-top: 15px;
+        padding: 6px 0px;
+        border: 1px solid rgb(39, 97, 148);
+        background-color: rgb(39, 97, 148);
+        color: white;
+        outline: none;
+        cursor: pointer;
+        border-radius: 8px;
+        font-size: 15px;
+      }
+      button:hover {
+        border: 1px solid rgb(35, 91, 139);
+        background-color: rgb(35, 91, 139);
+      }
+    }
+  }
   .hamburger {
     display: none;
   }
@@ -497,13 +606,10 @@
   top: 50%;
   transform: translate(-50%, -50%);
   background-color: rgba(0, 0, 0, 0.664);
-
   z-index: 100;
 }
 
 .project-modal {
-  scrollbar-color: blue orange;
-  scrollbar-width: thin;
   position: fixed;
   background-color: rgb(247, 247, 247);
   color: black;
@@ -513,7 +619,7 @@
   width: 1000px;
   min-width: 500px;
   max-width: 1500px;
-  overflow-y: scroll;
+  overflow-y: auto;
   overflow-x: hidden;
   max-height: 90vh;
   // overflow: hidden;
