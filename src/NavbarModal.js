@@ -14,7 +14,7 @@ export default function NavbarModal({ setModal }) {
 
     await axios
       .post(
-        "http://localhost:9000/.netlify/functions/server/portfolio/sendemail",
+        "https://elegant-haibt-a61338.netlify.app/.netlify/functions/server/portfolio/sendemail",
         {
           name: name,
           email: email,
