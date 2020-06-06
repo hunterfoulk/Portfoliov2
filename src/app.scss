@@ -1049,7 +1049,7 @@
       justify-content: flex-start;
       width: 100vw;
       padding: 0px;
-      height: 100vh;
+      height: calc(100% - 55px);
       top: 0px;
       left: 0px;
       transform: unset;
