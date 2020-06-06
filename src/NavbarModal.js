@@ -7,7 +7,6 @@ export default function NavbarModal({ setModal, setDropdown }) {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
-  useLockBodyScroll();
 
   const sendEmail = async (e) => {
     e.preventDefault();
