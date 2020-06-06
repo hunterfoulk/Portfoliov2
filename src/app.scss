@@ -1046,10 +1046,11 @@
     .nav-modal {
       position: fixed;
       display: flex;
-      // justify-content: flex-start;
+      flex-direction: column;
+      justify-content: flex-start;
+      padding: 30px 0px;
       width: 100vw;
-      padding: 0px;
-      height: calc(100% - 55px);
+      height: 100%;
       top: 0px;
       left: 0px;
       transform: unset;
@@ -1057,19 +1058,21 @@
       margin: 0px;
       border: none;
       border-radius: none;
-      margin-top: 40px;
+      margin-top: 51px;
       .modal-close {
-        margin-top: 10px;
+        // margin-top: 10px;
         background-color: red;
-        align-self: flex-end;
         .md-close {
           margin-right: 10px;
-          align-self: flex-end;
         }
       }
       form {
         flex: 0;
         width: 100%;
+        button {
+          min-height: 35px;
+          height: 35px;
+        }
       }
     }
   }
