@@ -34,54 +34,52 @@ export default function NavbarModal({ setModal, setDropdown }) {
   };
 
   return (
-    <div className="backdrop">
-      <div className="nav-modal">
-        <div className="modal-close">
-          <MdClose onClick={() => setModal(false)} className="md-close" />
-        </div>
-        <div className="nav-modal-header">
-          <h1>Contact</h1>
-        </div>
-        <form
-          onSubmit={(e) => {
+    <div className="nav-modal">
+      <div className="modal-close">
+        <MdClose onClick={() => setModal(false)} className="md-close" />
+      </div>
+      <div className="nav-modal-header">
+        <h1>Contact</h1>
+      </div>
+      <form
+        onSubmit={(e) => {
+          sendEmail(e);
+        }}
+      >
+        <input
+          value={name}
+          onChange={(e) => {
+            setName(e.target.value);
+            console.log(e.target.value);
+          }}
+          placeholder="Name..."
+        ></input>
+        <input
+          value={email}
+          onChange={(e) => {
+            setEmail(e.target.value);
+            console.log(e.target.value);
+          }}
+          placeholder="Email..."
+        ></input>
+        <textarea
+          value={message}
+          onChange={(e) => {
+            setMessage(e.target.value);
+            console.log(e.target.value);
+          }}
+          placeholder="Message..."
+          rows="4"
+          cols="50"
+        ></textarea>
+        <button
+          onClick={(e) => {
             sendEmail(e);
           }}
         >
-          <input
-            value={name}
-            onChange={(e) => {
-              setName(e.target.value);
-              console.log(e.target.value);
-            }}
-            placeholder="Name..."
-          ></input>
-          <input
-            value={email}
-            onChange={(e) => {
-              setEmail(e.target.value);
-              console.log(e.target.value);
-            }}
-            placeholder="Email..."
-          ></input>
-          <textarea
-            value={message}
-            onChange={(e) => {
-              setMessage(e.target.value);
-              console.log(e.target.value);
-            }}
-            placeholder="Message..."
-            rows="4"
-            cols="50"
-          ></textarea>
-          <button
-            onClick={(e) => {
-              sendEmail(e);
-            }}
-          >
-            Send Email
-          </button>
-        </form>
-      </div>
+          Send Email
+        </button>
+      </form>
     </div>
   );
 }

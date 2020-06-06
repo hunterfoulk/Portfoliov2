@@ -6,16 +6,23 @@ import Navbar from "./Navbar";
 import Homepage from "./Homepage";
 import Footer from "./Footer";
 import { ProjectRoutes } from "./Projectroutes";
-
+import NavbarModal from "./NavbarModal";
 
 function App() {
   const [{ projects }, dispatch] = useStateValue();
-  const [modalOpen, openModal] = useState(false);
+  const [modal, setModal] = useState(false);
+  const [dropdown, setDropdown] = useState(false);
 
   return (
     <>
       <Router>
-        <Navbar />
+        <Navbar
+          modal={modal}
+          setModal={setModal}
+          setDropdown={setDropdown}
+          dropdown={dropdown}
+        />
+        {modal && <NavbarModal setDropdown={setDropdown} setModal={setModal} />}
         {/* <Homepage /> */}
 
         {/* HOME ROUTE */}

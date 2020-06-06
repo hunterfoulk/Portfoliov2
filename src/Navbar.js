@@ -5,13 +5,9 @@ import Navdropdown from "./Navdropdown";
 
 import NavbarModal from "./NavbarModal";
 
-function Navbar() {
-  const [dropdown, setDropdown] = useState(false);
-  const [modal, setModal] = useState(false);
-
+function Navbar({ setDropdown, dropdown, modal, setModal }) {
   return (
     <div className="navbar">
-      {modal && <NavbarModal setDropdown={setDropdown} setModal={setModal} />}
       <div className="nav-links">
         <div className="nav-left">
           <Link to="/">
