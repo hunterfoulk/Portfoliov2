@@ -1042,4 +1042,31 @@
       }
     }
   }
+  .backdrop {
+    .nav-modal {
+      position: fixed;
+      display: flex;
+      justify-content: flex-start;
+      width: 100vw;
+      padding: 0px;
+      height: 100vh;
+      top: 0px;
+      left: 0px;
+      transform: unset;
+      border-radius: 0px;
+      margin: 0px;
+      border: none;
+      border-radius: none;
+      .modal-close {
+        margin-top: 10px;
+        .md-close {
+          margin-right: 10px;
+        }
+      }
+      form {
+        flex: 0;
+        width: 100%;
+      }
+    }
+  }
 }

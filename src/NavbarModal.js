@@ -3,7 +3,7 @@ import { MdClose } from "react-icons/md";
 import useLockBodyScroll from "./bodyScroll";
 import axios from "axios";
 
-export default function NavbarModal({ setModal }) {
+export default function NavbarModal({ setModal, setDropdown }) {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");

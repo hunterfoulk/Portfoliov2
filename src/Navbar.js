@@ -11,7 +11,7 @@ function Navbar() {
 
   return (
     <div className="navbar">
-      {modal && <NavbarModal setModal={setModal} />}
+      {modal && <NavbarModal setDropdown={setDropdown} setModal={setModal} />}
       <div className="nav-links">
         <div className="nav-left">
           <Link to="/">
@@ -39,7 +39,11 @@ function Navbar() {
         </div>
         {dropdown && (
           <>
-            <Navdropdown dropdown={dropdown} setDropdown={setDropdown} />
+            <Navdropdown
+              setModal={setModal}
+              dropdown={dropdown}
+              setDropdown={setDropdown}
+            />
           </>
         )}
       </div>

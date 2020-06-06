@@ -1,16 +1,16 @@
 import React from "react";
 import useLockBodyScroll from "./bodyScroll";
 
-export default function Navdropdown({}) {
+export default function Navdropdown({ setModal, setDropdown }) {
   //   useLockBodyScroll();
   return (
     <div className="navdropdown">
       <a
         onClick={() => {
-          window.scrollTo(550, 550);
+          setModal(true);
         }}
       >
-        <p>About</p>
+        <p onClick={() => setDropdown(false)}>Contact</p>
       </a>
       <a
         onClick={() => {
