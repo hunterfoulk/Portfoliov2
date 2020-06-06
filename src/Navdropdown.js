@@ -10,7 +10,9 @@ export default function Navdropdown({ setModal, setDropdown }) {
           setModal(true);
         }}
       >
-        <p onClick={() => setDropdown(false)}>Contact</p>
+        <p style={{ display: "none" }} onClick={() => setDropdown(false)}>
+          Contact
+        </p>
       </a>
       <a
         onClick={() => {
