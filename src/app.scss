@@ -1057,10 +1057,14 @@
       margin: 0px;
       border: none;
       border-radius: none;
+      margin-top: 40px;
       .modal-close {
         margin-top: 10px;
+        background-color: red;
+        align-self: flex-end;
         .md-close {
           margin-right: 10px;
+          align-self: flex-end;
         }
       }
       form {
