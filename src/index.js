@@ -20,6 +20,9 @@ import neetchat3 from "./images/neetchat3.PNG";
 import trellopic1 from "./images/trellopic1.PNG";
 import trellopic2 from "./images/trellopic2.PNG";
 import trellopic3 from "./images/trellopic3.PNG";
+import typegrampic1 from "./images/typegrampic1.PNG";
+import typegrampic2 from "./images/typegrampic2.PNG";
+import typegrampic3 from "./images/typegrampic3.PNG";
 
 let initialState = {
   projects: [
@@ -46,6 +49,32 @@ let initialState = {
         "Possibly plan to add features where a user can pick a house of their staying desire and rent it for as long as they choose.",
       route: "/airbnb",
     },
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    {
+      project: "TypeGram",
+      description:
+        " Social Media image posting and interactive platform inspired by instagram written in TypeScript!",
+      thumbnail: typegrampic1,
+      demo: "https://h-airbnb.netlify.app",
+      source: "https://github.com/hunterfoulk/TypeGram",
+      slides: [typegrampic1, typegrampic2, typegrampic3],
+      p1:
+        "Social media platform/instagram inspired application i spent a lot of time writing in typescript thats full of features like posting you own images,updating your own profile and liking and comment on your friends posts.",
+      tech: [
+        "React",
+        "TypeScript",
+        "Redux/Context API",
+        "Node/Express",
+        "PostgreSQL",
+        "AWS RDS/AWS S3 Bucket",
+        "HTML",
+        "CSS",
+      ],
+      plans:
+        "mostly looking to improve the UI and interactiveness with the user exerpience.",
+      route: "/typegram",
+    },
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     {
       project: "Aim-Training",
       description:
@@ -62,8 +91,9 @@ let initialState = {
       route: "/aimtraining",
       nodemo: "",
     },
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     {
-      project: "Trello",
+      project: "CompanyBoard",
       description:
         "Trello board i made for employees of the company to keep track of tasks and work flow.",
       thumbnail: trellopic2,
@@ -84,6 +114,7 @@ let initialState = {
         "Will further the UI design and add a feature to where employees can add pictures of themselves as their profile pictures if they choose. ",
       route: "/trello",
     },
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     {
       project: "Fashion-App",
       description:
@@ -100,6 +131,7 @@ let initialState = {
       route: "/fashionapp",
       nodemo: "Demo currently unavaible",
     },
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     {
       project: "NeetChat",
       description:
@@ -123,7 +155,7 @@ let initialState = {
       route: "/neetchat",
       nodemo: "Demo currently unavaible",
     },
-
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     {
       project: "MovieDB",
       description:

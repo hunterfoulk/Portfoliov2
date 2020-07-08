@@ -70,11 +70,11 @@ export default function Homepage({ project }) {
               needed in todays world. Since then I've shifted my learning and
               focuses to the web, thriving in fulfillment learning new and
               modern technologies of Full Stack Web Development such as modern
-              Javascript, HTML , CSS and frameworks such as React, Gatsby and
-              how far every programming language and other technologies have
-              come. Some of my hobbies outside of programming are daily
-              exercising, hanging out with my also coding friends and just
-              living everyday to the fullest!
+              Javascript, HTML , CSS and frameworks such as React with
+              TypeScript, Gatsby and how far every programming language and
+              other technologies have come. Some of my hobbies outside of
+              programming are daily exercising, hanging out with my also coding
+              friends and just living everyday to the fullest!
             </p>
           </div>
         </div>
@@ -89,6 +89,7 @@ export default function Homepage({ project }) {
             <div className="front-end">
               <h3>Front-End</h3>
               <li>React</li>
+              <li>TypeScript</li>
               <li>HTML</li>
               <li>CSS</li>
               <li>JavaScript</li>
