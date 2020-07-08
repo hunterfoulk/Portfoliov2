@@ -2,10 +2,9 @@ import React, { useState } from "react";
 import portLogo from "./images/hf-logo.png";
 import { Link } from "react-router-dom";
 import Navdropdown from "./Navdropdown";
-
 import NavbarModal from "./NavbarModal";
 
-function Navbar({ setDropdown, dropdown, modal, setModal }) {
+function Navbar({ setDropdown, dropdown, modal, setModal, emailModal }) {
   return (
     <div className="navbar">
       <div className="nav-links">
@@ -18,7 +17,7 @@ function Navbar({ setDropdown, dropdown, modal, setModal }) {
           </Link>
         </div>
         <div className="nav-right">
-          <span onClick={() => setModal(!modal)}>Contact</span>
+          <span onClick={() => emailModal()}>Contact</span>
 
           <span
             onClick={() => {

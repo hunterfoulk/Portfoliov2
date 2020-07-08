@@ -23,6 +23,9 @@ import trellopic3 from "./images/trellopic3.PNG";
 import typegrampic1 from "./images/typegrampic1.PNG";
 import typegrampic2 from "./images/typegrampic2.PNG";
 import typegrampic3 from "./images/typegrampic3.PNG";
+import huntrecpic1 from "./images/huntrecpic1.PNG";
+import huntrecpic2 from "./images/huntrecpic2.PNG";
+import huntrecpic3 from "./images/huntrecpic3.PNG";
 
 let initialState = {
   projects: [
@@ -55,7 +58,7 @@ let initialState = {
       description:
         " Social Media image posting and interactive platform inspired by instagram written in TypeScript!",
       thumbnail: typegrampic1,
-      demo: "https://h-airbnb.netlify.app",
+      demo: "https://distracted-mccarthy-5cb652.netlify.app",
       source: "https://github.com/hunterfoulk/TypeGram",
       slides: [typegrampic1, typegrampic2, typegrampic3],
       p1:
@@ -90,6 +93,30 @@ let initialState = {
         "I plan to add difficulty levels and multiple different game settings to cater to what area of skill you are trying to improve in",
       route: "/aimtraining",
       nodemo: "",
+    },
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    {
+      project: "Hunt-Recruiter",
+      description:
+        "Job Searching and posting application to find and apply at your dream job and great companies to find you!  ",
+      thumbnail: huntrecpic1,
+      demo: "https://h-airbnb.netlify.app",
+      source: "https://github.com/hunterfoulk/HuntRecruiter",
+      slides: [huntrecpic1, huntrecpic2, huntrecpic3],
+      p1:
+        "Employer and job searching application for you to finally find that dream job of yours. Send in your resume to your favorite companies!",
+      tech: [
+        "React",
+        "Redux/Context API",
+        "NodeMailer",
+        "Node/Express",
+        "PostgreSQL",
+        "HTML",
+        "CSS",
+      ],
+      plans:
+        "no future plans application is finished to my original goal i set.",
+      route: "/airbnb",
     },
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     {
