@@ -14,9 +14,6 @@ export default function NavbarModal({ setModal, setDropdown, emailClose }) {
     // https://elegant-haibt-a61338.netlify.app/.netlify/functions/server/portfolio/sendemail
     // http://localhost:9000/.netlify/functions/server/portfolio/sendemail
 
-    let headers = {
-      "Content-Type": " text/html; charset=UTF-8",
-    };
     await axios
       .post(
         "https://elegant-haibt-a61338.netlify.app/.netlify/functions/server/portfolio/sendemail",
@@ -24,10 +21,6 @@ export default function NavbarModal({ setModal, setDropdown, emailClose }) {
           name: name,
           email: email,
           message: message,
-        },
-        {
-          headers: headers,
-          withCredentials: true,
         }
       )
 
