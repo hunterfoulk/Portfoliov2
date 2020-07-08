@@ -11,11 +11,10 @@ export default function NavbarModal({ setModal, setDropdown, emailClose }) {
 
   const sendEmail = async (e) => {
     e.preventDefault();
-    // https://elegant-haibt-a61338.netlify.app/.netlify/functions/server/portfolio/sendemail
-    await axios
 
+    await axios
       .post(
-        "http://localhost:9000/.netlify/functions/server/portfolio/sendemail",
+        "https://elegant-haibt-a61338.netlify.app/.netlify/functions/server/portfolio/sendemail",
         {
           name: name,
           email: email,
