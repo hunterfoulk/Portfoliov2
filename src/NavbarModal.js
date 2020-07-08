@@ -26,9 +26,7 @@ export default function NavbarModal({ setModal, setDropdown, emailClose }) {
         console.log("email has been sent");
         setSuccess(true);
       })
-      .catch((error) =>
-        console.error("new job post was not succesfull:", error)
-      );
+      .catch((error) => console.error("email was not succesfull:", error));
 
     setName("");
     setEmail("");
