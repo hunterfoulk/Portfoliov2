@@ -58,7 +58,7 @@ let initialState = {
       description:
         " Social Media image posting and interactive platform inspired by instagram written in TypeScript!",
       thumbnail: typegrampic1,
-      demo: "https://distracted-mccarthy-5cb652.netlify.app",
+      demo: "https://typegram.netlify.app",
       source: "https://github.com/hunterfoulk/TypeGram",
       slides: [typegrampic1, typegrampic2, typegrampic3],
       p1:
