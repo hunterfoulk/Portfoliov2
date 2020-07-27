@@ -90,9 +90,9 @@ export default function Homepage({ project }) {
               <h3>Front-End</h3>
               <li>React</li>
               <li>TypeScript</li>
+              <li>JavaScript</li>
               <li>HTML</li>
               <li>CSS</li>
-              <li>JavaScript</li>
             </div>
             <div className="front-end">
               <h3>Back-End</h3>

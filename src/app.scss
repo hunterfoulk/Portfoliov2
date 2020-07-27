@@ -375,20 +375,26 @@
 }
 .aboutme-section-main {
   display: flex;
-  width: 40%;
-  // height: 480px;
-  max-height: 480px;
-  padding: 10px 20px;
+  width: 100%;
+  // height: 100%;
+  // max-height: 480px;
+  // padding: 10px 20px;
   margin-top: 20px;
+  // padding: 40px 20px;
+  justify-content: center;
   margin-bottom: 40px;
+  // padding-bottom: 40px;
   // color: rgb(240, 238, 238);
-  // background-color: red;
+  // background-color: rgb(150, 87, 150);
   color: black;
   .aboutme-left {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 50%;
+    // max-width: 50%;
+    // height: 600px;
     // background-color: rgb(160, 75, 75);
 
     p {
@@ -411,9 +417,10 @@
   justify-content: center;
   align-items: center;
   background-color: rgba(236, 236, 236, 0.904);
+  // background-color: rgb(168, 105, 105);
   width: 100%;
-  height: 480px;
-  max-height: 480px;
+  // height: 480px;
+  // max-height: 480px;
   padding: 0px 200px;
   margin-top: 20px;
   margin-bottom: 50px;
@@ -424,12 +431,12 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    max-width: 100%;
+    // width: 100%;
+    // max-width: 100%;
+    min-width: 50%;
     // background-color: rgb(88, 175, 88);
-
     .tech-line {
-      width: 15%;
+      width: 35%;
       margin-top: 5px;
       //   border-bottom: 1px solid rgb(240, 238, 238);
       border-bottom: 1px solid black;
@@ -444,15 +451,14 @@
       height: 100%;
       font-size: 23px;
       margin-top: 15px;
-
-      // background-color: red;
+      // background-color: rgb(107, 182, 201);
       .front-end {
         display: flex;
         flex-direction: column;
         // background-color: red;
         margin: 25px;
         padding: 20px;
-        max-height: 300px;
+        // max-height: 300px;
       }
     }
     li {
@@ -520,6 +526,7 @@
   height: 230px;
   margin-bottom: 30px;
   background-color: rgba(233, 233, 233, 0.726);
+  // background-color: rgb(61, 61, 61);
 
   .img-placeholder {
     height: 100%;
@@ -585,7 +592,8 @@
     font-size: 20px;
     text-align: left;
     padding: 15px;
-    color: rgb(99, 99, 99);
+    color: rgb(73, 73, 73);
+    // color: white;
   }
   .h2-text {
     display: flex;
@@ -874,21 +882,24 @@
   }
   .aboutme-section-main {
     width: 100%;
+    // background-color: red;
     .aboutme-left {
       width: 100%;
-      max-height: 600px;
+      // max-height: 600px;
       // background-color: green;
       .about-me-left-text {
-        width: 100%;
-        max-height: 500px;
+        display: flex;
+        width: 350px;
+        // background-color: green;
+        // max-height: 500px;
       }
       .aboutme-line {
-        width: 40%;
+        width: 60%;
       }
       p {
         font-size: 15px;
         text-align: left;
-        padding: 15px;
+        // padding: 15px;
         font-weight: 500;
       }
     }
@@ -955,6 +966,7 @@
     .aboutme-right {
       // background-color: purple;
       height: 100%;
+      width: 100%;
       .tech-line {
         width: 70%;
       }
@@ -973,9 +985,9 @@
           // justify-content: center;
           padding: 0px;
           margin: 20px;
-          width: 120px;
+          width: 100%;
           // background-color: green;
-          max-height: 180px;
+          // max-height: 180px;
           h3 {
             font-size: 18px;
             text-align: center;
