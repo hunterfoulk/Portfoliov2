@@ -176,7 +176,7 @@ export default function Homepage({
 
       <div className="projects-section-main" id="projects-section-main">
         <div className="project-card-container">
-          <h1 className="project-h1">Personal Projects</h1>
+          <h1 className="project-h1">Projects</h1>
 
           {projectModal && (
             <>
