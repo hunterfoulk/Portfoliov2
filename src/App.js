@@ -8,12 +8,14 @@ import Footer from "./Footer";
 import { ProjectRoutes } from "./Projectroutes";
 import NavbarModal from "./NavbarModal";
 import Backdrop from "./backdrop";
+import ModalTransition from "./transition";
 
 function App() {
   const [{ projects }, dispatch] = useStateValue();
   const [modal, setModal] = useState(false);
   const [dropdown, setDropdown] = useState(false);
   const [backdrop, setBackDrop] = useState(false);
+  const [projectModal, setProjectModal] = useState(false);
 
   const emailModal = () => {
     setModal(true);
@@ -23,19 +25,13 @@ function App() {
   const emailClose = () => {
     setBackDrop(false);
     setModal(false);
+    setProjectModal(false);
   };
   return (
     <>
       <Router>
-        {backdrop ? <Backdrop emailClose={emailClose} /> : null}
-        <Navbar
-          modal={modal}
-          setModal={setModal}
-          setDropdown={setDropdown}
-          setBackDrop={setBackDrop}
-          dropdown={dropdown}
-          emailModal={emailModal}
-        />
+        {backdrop && <Backdrop emailClose={emailClose} />}
+
         {modal && (
           <NavbarModal
             emailClose={emailClose}
@@ -43,8 +39,8 @@ function App() {
             setModal={setModal}
           />
         )}
-        {/* <Homepage /> */}
 
+        {/* <Homepage /> */}
         {/* HOME ROUTE */}
         <Route
           exact
@@ -52,11 +48,19 @@ function App() {
           render={() => (
             <>
               {" "}
-              <Homepage />
+              <Homepage
+                setProjectModal={setProjectModal}
+                projectModal={projectModal}
+                modal={modal}
+                setModal={setModal}
+                setDropdown={setDropdown}
+                setBackDrop={setBackDrop}
+                dropdown={dropdown}
+                emailModal={emailModal}
+              />
             </>
           )}
         ></Route>
-
         {/* MOBILE PROJECT ROUTE */}
         {projects.map((project, i) => (
           <Route
@@ -66,8 +70,8 @@ function App() {
             render={() => <ProjectRoutes project={project} />}
           ></Route>
         ))}
+        <Footer />
       </Router>
-      <Footer />
     </>
   );
 }

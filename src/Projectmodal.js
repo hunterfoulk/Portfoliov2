@@ -8,7 +8,7 @@ import { FaGithub } from "react-icons/fa";
 import useLockBodyScroll from "./bodyScroll";
 
 export default function Projectmodal({ modalContent }) {
-  useLockBodyScroll();
+  // useLockBodyScroll();
   return (
     <>
       <div className="project-modal scrollbar">

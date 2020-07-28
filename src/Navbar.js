@@ -3,6 +3,7 @@ import portLogo from "./images/hf-logo.png";
 import { Link } from "react-router-dom";
 import Navdropdown from "./Navdropdown";
 import NavbarModal from "./NavbarModal";
+import LOGO from "./images/LOGO.png";
 
 function Navbar({ setDropdown, dropdown, modal, setModal, emailModal }) {
   return (
@@ -10,7 +11,7 @@ function Navbar({ setDropdown, dropdown, modal, setModal, emailModal }) {
       <div className="nav-links">
         <div className="nav-left">
           <Link to="/">
-            <img src={portLogo} />
+            <img src={LOGO} />
           </Link>
           <Link className="nav-left-link" to="/">
             <p>HUNTER FOULK</p>
@@ -21,7 +22,7 @@ function Navbar({ setDropdown, dropdown, modal, setModal, emailModal }) {
 
           <span
             onClick={() => {
-              window.scrollTo(1600, 1600);
+              window.scrollTo(1210, 1210);
             }}
           >
             Projects

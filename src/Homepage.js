@@ -3,28 +3,58 @@ import LinkedIn from "./images/linkedIn.png";
 import { useStateValue } from "./state";
 import ProjectModal from "./Projectmodal";
 import { Link } from "react-router-dom";
+import avatar from "../src/images/avatar3.PNG";
+import cloud from "../src/images/cloud.png";
+import data from "../src/images/data.png";
+import database from "../src/images/servericon.png";
+import browser from "../src/images/browser.png";
+import Navbar from "../src/Navbar";
+import Stars from "./stars";
 
-export default function Homepage({ project }) {
+export default function Homepage({
+  project,
+  setBackDrop,
+  setProjectModal,
+  projectModal,
+  modal,
+  setModal,
+  setDropdown,
+  dropdown,
+  emailModal,
+}) {
   const [{ projects }] = useStateValue();
-  const [modal, setModal] = useState(false);
-  const [backdrop, setBackdrop] = useState(false);
+  // const [modal, setModal] = useState(false);
   const [modalContent, setContent] = useState(projects[0]);
   let isMobile = window.innerWidth <= 700;
 
   return (
     <div className="homepage-main">
       <div className="header">
-        <div className="face"></div>
+        <Navbar
+          modal={modal}
+          setModal={setModal}
+          setDropdown={setDropdown}
+          setBackDrop={setBackDrop}
+          dropdown={dropdown}
+          emailModal={emailModal}
+        />
+        <Stars />
+        <div className="face">
+          <div className="face-container">
+            <img src={avatar} />
+          </div>
+        </div>
         <div className="header-content-container">
           <h2 className="">Hunter Foulk</h2>
 
           <div className="header-line"></div>
           <span className="area-span">
-            Software Engineer in Tucson, Arizona
+            Software Developer in Tucson, Arizona
           </span>
           <span className="email"> hunterfoulkdev@gmail.com</span>
           <div className="buttons-container">
             <a
+              style={{ textDecoration: "none" }}
               target="_blank"
               rel="noopener noreferrer"
               href="https://github.com/hunterfoulk"
@@ -51,7 +81,7 @@ export default function Homepage({ project }) {
           </a>
         </div>
       </div>
-      <div className="aboutme-section-main">
+      {/* <div className="aboutme-section-main">
         <div className="aboutme-left">
           <div>
             <h1>About Me</h1>
@@ -78,38 +108,67 @@ export default function Homepage({ project }) {
             </p>
           </div>
         </div>
-      </div>
+      </div> */}
 
       <div className="technical-section-main">
         <div className="aboutme-right">
-          <h1>Technical Skills</h1>
-          <div className="tech-line"></div>
+          <h1>Technologies</h1>
+          {/* <div className="tech-line"></div> */}
 
           <div className="list">
             <div className="front-end">
-              <h3>Front-End</h3>
-              <li>React</li>
-              <li>TypeScript</li>
-              <li>JavaScript</li>
-              <li>HTML</li>
-              <li>CSS</li>
+              <div className="icon-container">
+                <img src={browser} />
+              </div>
+              <div className="text-header">
+                <h3>Front-End</h3>
+              </div>
+              <div className="list-text-container">
+                <li>React</li>
+                <li>TypeScript</li>
+                <li>JavaScript</li>
+                <li>HTML</li>
+                <li>CSS</li>
+              </div>
             </div>
             <div className="front-end">
-              <h3>Back-End</h3>
-              <li>Nodejs</li>
-              <li>Express</li>
+              <div className="icon-container">
+                <img src={data} />
+              </div>
+              <div className="text-header">
+                <h3>Back-End</h3>
+              </div>
+              <div className="list-text-container">
+                <li>Nodejs</li>
+                <li>Express</li>
+                <li>SocketIO</li>
+              </div>
             </div>
             <div className="front-end">
-              <h3>Databases</h3>
-              <li>SQL</li>
-              <li>PostgreSQL</li>
-              <li>MongoDB</li>
+              <div className="icon-container">
+                <img src={database} />
+              </div>
+              <div className="text-header">
+                <h3>Databases</h3>
+              </div>
+              <div className="list-text-container">
+                <li>SQL</li>
+                <li>PostgreSQL</li>
+                <li>MongoDB</li>
+              </div>
             </div>
             <div className="front-end">
-              <h3>Cloud Platforms</h3>
-              <li>AWS</li>
-              <li>AWS RDS</li>
-              <li>AWS S3 Bucket</li>
+              <div className="icon-container">
+                <img src={cloud} />
+              </div>
+              <div className="text-header">
+                <h3>Cloud Platforms</h3>
+              </div>
+              <div className="list-text-container">
+                <li>AWS</li>
+                <li>AWS RDS</li>
+                <li>AWS S3 Bucket</li>
+              </div>
             </div>
           </div>
         </div>
@@ -117,17 +176,11 @@ export default function Homepage({ project }) {
 
       <div className="projects-section-main" id="projects-section-main">
         <div className="project-card-container">
-          <h1 className="project-h1">Projects</h1>
+          <h1 className="project-h1">Personal Projects</h1>
 
-          {modal && (
+          {projectModal && (
             <>
-              <div className="backdrop" onClick={() => setModal(false)}></div>
-
-              <ProjectModal
-                modalContent={modalContent}
-                setBackdrop={setBackdrop}
-                setModal={setModal}
-              />
+              <ProjectModal modalContent={modalContent} />
             </>
           )}
 
@@ -153,9 +206,9 @@ export default function Homepage({ project }) {
                             !isMobile &&
                             window.location.pathname === "/"
                           ) {
-                            setModal(true);
+                            setProjectModal(true);
                             setContent(card);
-                            setBackdrop(true);
+                            setBackDrop(true);
                           } else {
                             window.location.href = `${card.route}`;
                           }

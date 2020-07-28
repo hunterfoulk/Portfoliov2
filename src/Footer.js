@@ -1,5 +1,6 @@
 import React from "react";
 import portLogo from "./images/hf-logo.png";
+import LOGO from "./images/LOGO.png";
 import "./app.scss";
 
 export default function Footer() {
@@ -20,7 +21,7 @@ export default function Footer() {
           <button className="footer-buttons">Resume</button>
         </a>
       </div>
-      <img className="footer-logo" src={portLogo} />
+      <img className="footer-logo" src={LOGO} />
       <span>© 2020 Hunter Foulk | All rights reserved.</span>
     </div>
   );
