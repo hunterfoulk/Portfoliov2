@@ -2,30 +2,30 @@ import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
 import { StateProvider } from "./state";
-import aimpic1 from "./images/aim-trainingpic1.PNG";
-import aimpic2 from "./images/aim-trainingpic2.PNG";
-import aimpic3 from "./images/aim-trainingpic3.PNG";
-import airbnbpic1 from "./images/airbnbpic1.PNG";
-import airbnbpic2 from "./images/airbnbpic2.PNG";
-import airbnbpic3 from "./images/airbnbpic3.PNG";
-import fashionapp1 from "./images/fashionapp1.PNG";
-import fashionapp2 from "./images/fashionapp2.PNG";
-import fashionapp3 from "./images/fashionapp3.PNG";
+import aimpic1 from "./newimages/aim1.jpg";
+import aimpic2 from "./newimages/aim2.jpg";
+import aimpic3 from "./newimages/aim3.jpg";
+import airbnbpic1 from "./newimages/airbnbpic1.jpg";
+import airbnbpic2 from "./newimages/airbnbpic2.jpg";
+import airbnbpic3 from "./newimages/airbnbpic3.jpg";
+import fashionapp1 from "./newimages/fashion1.jpg";
+import fashionapp2 from "./newimages/fashion2.jpg";
+import fashionapp3 from "./newimages/fashion3.jpg";
 import movieapp1 from "./images/movieapp1.PNG";
 import movieapp2 from "./images/movieapp2.PNG";
 import movieapp3 from "./images/movieapp3.PNG";
-import neetchat1 from "./images/neetchat1.PNG";
-import neetchat2 from "./images/neetchat2.PNG";
-import neetchat3 from "./images/neetchat3.PNG";
+import neetchat1 from "./newimages/neet1.jpg";
+import neetchat2 from "./newimages/neet2.jpg";
+import neetchat3 from "./newimages/neet3.jpg";
 import trellopic1 from "./images/trellopic1.PNG";
 import trellopic2 from "./images/trellopic2.PNG";
 import trellopic3 from "./images/trellopic3.PNG";
-import typegrampic1 from "./images/typegrampic1.PNG";
-import typegrampic2 from "./images/typegrampic2.PNG";
-import typegrampic3 from "./images/typegrampic3.PNG";
-import huntrecpic1 from "./images/huntrecpic1.PNG";
-import huntrecpic2 from "./images/huntrecpic2.PNG";
-import huntrecpic3 from "./images/huntrecpic3.PNG";
+import typegrampic1 from "./newimages/type1.jpg";
+import typegrampic2 from "./newimages/type2.jpg";
+import typegrampic3 from "./newimages/type3.jpg";
+import huntrecpic1 from "./newimages/rec1.jpg";
+import huntrecpic2 from "./newimages/rec2.jpg";
+import huntrecpic3 from "./newimages/rec3.jpg";
 
 let initialState = {
   projects: [
@@ -122,7 +122,7 @@ let initialState = {
     {
       project: "CompanyBoard",
       description:
-        "Trello board i made for employees of the company to keep track of tasks and work flow.",
+        "Company board i made for employees of the company to keep track of tasks and work flow.",
       thumbnail: trellopic2,
       demo: "https://ecstatic-bartik-098f59.netlify.app",
       source: "https://github.com/hunterfoulk/Trello",
