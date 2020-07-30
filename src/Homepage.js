@@ -13,6 +13,7 @@ import { AiOutlineFileText } from "react-icons/ai";
 import { FaArrowCircleRight } from "react-icons/fa";
 import { BsFillPersonFill } from "react-icons/bs";
 import { FiMail } from "react-icons/fi";
+import Navdrop from "./Navdropdown";
 import Work from "./work";
 import About from "./about";
 
@@ -30,7 +31,8 @@ export default function Homepage({
   const [{ projects }] = useStateValue();
   // const [modal, setModal] = useState(false);
   const [modalContent, setContent] = useState(projects[0]);
-  let isMobile = window.innerWidth <= 700;
+  let isMobile = window.innerWidth <= 910;
+
   const [tab, setTab] = useState("WORK");
 
   const activeTabStyle = {
@@ -123,8 +125,23 @@ export default function Homepage({
       </div>
       <div className="homepage-right">
         {/* HEADER START*/}
+
         <div className="header">
           <Stars />
+          {isMobile && (
+            // <div className="hamburger" onClick={() => setDropdown(!dropdown)}>
+            //   <p className="hamburger-icon">☰ HELLO</p>
+            // </div>
+            <div className="hamburger">
+              <h1
+                onClick={() => setDropdown(!dropdown)}
+                style={{ color: "white", marginRight: "8px" }}
+              >
+                ☰
+              </h1>
+            </div>
+          )}
+          {dropdown && <Navdrop />}
           <div className="header-container">
             <div className="header-content-container">
               <div className="header-text-container">
