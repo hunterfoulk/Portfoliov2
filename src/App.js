@@ -32,6 +32,15 @@ function App() {
       <Router>
         {backdrop && <Backdrop emailClose={emailClose} />}
 
+        {/* <Navbar
+            modal={modal}
+            setModal={setModal}
+            setDropdown={setDropdown}
+            setBackDrop={setBackDrop}
+            dropdown={dropdown}
+            emailModal={emailModal}
+          /> */}
+
         {modal && (
           <NavbarModal
             emailClose={emailClose}

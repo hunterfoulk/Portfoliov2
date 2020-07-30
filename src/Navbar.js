@@ -18,6 +18,7 @@ function Navbar({ setDropdown, dropdown, modal, setModal, emailModal }) {
           </Link>
         </div>
         <div className="nav-right">
+          <span>About</span>
           <span onClick={() => emailModal()}>Contact</span>
 
           <span

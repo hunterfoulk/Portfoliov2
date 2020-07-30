@@ -14,6 +14,9 @@ export default function Navdropdown({ setModal, setDropdown }) {
           Contact
         </p>
       </a>
+      <a href="/about">
+        <p>About</p>
+      </a>
       <a
         onClick={() => {
           window.scrollTo(1610, 1610);
