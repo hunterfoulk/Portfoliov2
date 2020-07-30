@@ -167,10 +167,8 @@ export default function Homepage({
                 </div>
               </div>
               <div className="face-main">
-                <div className="face">
-                  <div className="face-container">
-                    <img src={avatar} />
-                  </div>
+                <div className="face-container">
+                  <img src={avatar} />
                 </div>
               </div>
             </div>
