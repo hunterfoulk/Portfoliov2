@@ -410,20 +410,13 @@
           // background-color: purple;
           width: 50%;
           justify-content: center;
-
           .face-container {
-            // margin-top: 25px;
-            // padding: 150px 150px;
             width: 200px;
             height: 200px;
-            // border-radius: 50%;
-            // margin-left: 10px;
             // background-color: Red;
             img {
               height: 100%;
               width: 100%;
-              // margin-left: 2px;
-              // margin-top: 2px;
               // border-radius: 50%;
               // background-color: red;
             }
@@ -1130,24 +1123,24 @@
         padding-left: 4px;
         height: 100%;
       }
-      .face-main {
-        // background-color: orange;
-        align-items: center;
-        // width: 100%;
-        // height: 100%;
-        .face-container {
-          // width: 100px;
-          // height: 100px;
-          background-color: transparent;
-          // background-color: rgb(163, 57, 53);
-          height: 100%;
-          // border-radius: none;
-          img {
-            // display: none;
-            height: 100px;
-            width: 100px;
-          }
-        }
+    }
+  }
+  .face-main {
+    // background-color: orange;
+    align-items: center;
+
+    .face-container {
+      width: 100px;
+      height: 100px;
+      // display: none;
+      // background-color: transparent;
+      background-color: rgb(60, 104, 124);
+      // height: 100%;
+      // border-radius: none;
+      img {
+        // display: none;
+        // height: 100px;
+        // width: 100px;
       }
     }
   }
@@ -1193,10 +1186,13 @@
           // background-color: yellow;
           display: flex;
           flex-direction: column;
-          height: 50%;
+          justify-content: center;
+          align-items: center;
+          // height: 100%;
+          width: 40%;
           .header-texts-container {
             p {
-              font-size: 16px;
+              font-size: 19px;
               // background-color: green;
               // text-align: center;
               line-height: 20px;
@@ -1206,11 +1202,11 @@
         .face-main {
           // background-color: orange;
           align-items: center;
-          // width: 20%;
-          height: 50%;
+          width: 20%;
+          height: 100%;
           .face-container {
-            width: 100px;
-            height: 100px;
+            // width: 50px;
+            // height: 50px;
             background-color: transparent;
             // background-color: rgb(163, 57, 53);
 
