@@ -266,9 +266,11 @@
     }
     .left-about {
       display: flex;
+      flex-direction: column;
       margin-top: 20px;
       // background-color: red;
       text-align: center;
+      justify-content: center;
     }
   }
   .left-links-container {

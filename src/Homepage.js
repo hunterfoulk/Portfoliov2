@@ -56,7 +56,11 @@ export default function Homepage({
             Hi, my name is Hunter Foulk and i'm a software developer. Welcome to
             my personal portfolio!
           </p>
+          <span style={{ fontWeight: "600", marginTop: "10px" }}>
+            Hunterfoulkdev@gmail.com
+          </span>
         </div>
+
         <div className="left-links-container">
           <div className="left-links">
             <a
