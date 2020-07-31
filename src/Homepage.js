@@ -16,6 +16,7 @@ import { FiMail } from "react-icons/fi";
 import Navdrop from "./Navdropdown";
 import Work from "./work";
 import About from "./about";
+import Contact from "./contact";
 
 export default function Homepage({
   project,
@@ -109,7 +110,10 @@ export default function Homepage({
             />
             About me
           </span>
-          <span>
+          <span
+            style={tab === "CONTACT" ? activeTabStyle : {}}
+            onClick={() => setTab("CONTACT")}
+          >
             <FiMail
               style={{ position: "relative", top: "2px", right: "5px" }}
             />
@@ -207,6 +211,7 @@ export default function Homepage({
             />
           )}
           {tab === "ABOUT" && <About />}
+          {tab === "CONTACT" && <Contact />}
         </div>
       </div>
     </div>
