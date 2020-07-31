@@ -26,9 +26,36 @@ import typegrampic3 from "./newimages/type3.jpg";
 import huntrecpic1 from "./newimages/rec1.jpg";
 import huntrecpic2 from "./newimages/rec2.jpg";
 import huntrecpic3 from "./newimages/rec3.jpg";
+import youtubepic1 from "./images/youtubepic1.PNG";
+import youtubepic2 from "./images/youtubepic2.png";
+import youtubepic3 from "./images/youtubepic3.PNG";
 
 let initialState = {
   projects: [
+    {
+      project: "HuntUpload",
+      description:
+        "HuntUpload is a video uploading and watching application users can interact and comment and leave feedback on eachother videos. ",
+      thumbnail: youtubepic1,
+      demo: "",
+      source: "https://github.com/hunterfoulk/HuntUpload",
+      slides: [youtubepic1, youtubepic2, youtubepic3],
+      p1:
+        "Upload a video and link it to all your friends! You can also edit your profile to your style by adding a banner and a profile picture. Check out my youtube video to see all the features. ",
+      tech: [
+        "React",
+        "Redux/Context API",
+        "Node/Express",
+        "PostgreSQL",
+        "AWS RDS/AWS S3 Bucket",
+        "HTML",
+        "SCSS",
+      ],
+      plans:
+        "Migrate database to MySQL and perfectly optimized for better normalization with the structure of the database",
+      route: "/huntupload",
+      nodemo: "Demo currently unavaible",
+    },
     {
       project: "AirBnB",
       description:
