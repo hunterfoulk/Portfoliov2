@@ -1168,10 +1168,15 @@
 
       // flex-wrap: wrap;
       .header-name-container {
-        margin-top: 8px;
+        // margin-top: 8px;
         font-size: 18px;
+        // background-color: red;
+        margin: 0px;
+        display: flex;
+        align-items: flex-end;
+        margin-bottom: 1px;
         h2 {
-          font-size: 27px;
+          font-size: 25px;
         }
       }
       .header-content-container {
