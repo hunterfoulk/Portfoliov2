@@ -2,12 +2,24 @@ import React, { useState } from "react";
 import { useStateValue } from "./state";
 import { AiOutlineArrowRight } from "react-icons/ai";
 import { AiOutlineArrowLeft } from "react-icons/ai";
+import { FaArrowAltCircleLeft } from "react-icons/fa";
 import Carousel, { Dots } from "@brainhubeu/react-carousel";
+import { Link, useHistory } from "react-router-dom";
 
 export const ProjectRoutes = ({ project }) => {
+  const history = useHistory();
   return (
     <div className="route-main">
-      <div className="route-header">{project.project}</div>
+      <div className="route-header">
+        {" "}
+        <FaArrowAltCircleLeft
+          style={{ position: "absolute", left: "10px", top: "8px" }}
+          onClick={() => {
+            history.push("/");
+          }}
+        />
+        {project.project}
+      </div>
       <div className="route-caro" style={{ padding: "5px 0px" }}>
         <Carousel
           className="carousel"

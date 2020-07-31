@@ -33,7 +33,6 @@ export default function Homepage({
   // const [modal, setModal] = useState(false);
   const [modalContent, setContent] = useState(projects[0]);
   let isMobile = window.innerWidth <= 910;
-
   const [tab, setTab] = useState("WORK");
 
   const activeTabStyle = {
@@ -149,7 +148,7 @@ export default function Homepage({
               </h1>
             </div>
           )}
-          {dropdown && <Navdrop />}
+          {dropdown && <Navdrop setTab={setTab} />}
           <div className="header-container">
             <div className="header-content-container">
               <div className="header-text-container">

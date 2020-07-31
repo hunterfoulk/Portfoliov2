@@ -212,14 +212,16 @@
     .about-outro {
       margin: 0px;
       justify-content: center;
-      // width: 100%;
+      width: 100%;
       align-items: stretch;
+      //   background-color: blue;
       .about-outro-text {
         width: 100%;
         display: flex;
+        // background-color: red;
         align-items: stretch;
         margin: 0px;
-        padding: 0px 5px;
+        padding: 0px 10px;
       }
     }
     .about-header {

@@ -116,7 +116,7 @@ let initialState = {
       ],
       plans:
         "no future plans application is finished to my original goal i set.",
-      route: "/airbnb",
+      route: "/huntrecruiter",
     },
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     {

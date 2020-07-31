@@ -1,7 +1,7 @@
 import React from "react";
 import useLockBodyScroll from "./bodyScroll";
 
-export default function Navdropdown({ setModal, setDropdown }) {
+export default function Navdropdown({ setModal, setDropdown, setTab }) {
   //   useLockBodyScroll();
   return (
     <div className="navdropdown">
@@ -10,20 +10,25 @@ export default function Navdropdown({ setModal, setDropdown }) {
           setModal(true);
         }}
       >
-        <p style={{ display: "none" }} onClick={() => setDropdown(false)}>
+        {/* <p style={{ display: "none" }} onClick={() => setDropdown(false)}>
           Contact
-        </p>
+        </p> */}
       </a>
-      <a href="/about">
+      <a onClick={() => setTab("ABOUT")}>
         <p>About</p>
       </a>
       <a
         onClick={() => {
-          window.scrollTo(1610, 1610);
+          setTab("WORK");
+          window.scrollTo(1605, 1605);
         }}
       >
         <p>Projects</p>
       </a>
+      <a onClick={() => setTab("CONTACT")}>
+        <p>Contact</p>
+      </a>
+
       <a href="/">
         <p>Resume</p>
       </a>
