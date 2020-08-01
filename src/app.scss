@@ -471,7 +471,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background-color: rgba(236, 236, 236, 0.904);
+  background-color: rgba(223, 223, 223, 0.904);
   // background-color: rgb(168, 105, 105);w
   width: 100%;
   padding-top: 80px;
@@ -514,7 +514,7 @@
       .front-end {
         display: flex;
         background-color: rgba(245, 245, 245, 0.849);
-        border: 2px solid #303030;
+        border: 3px solid #303030;
         flex-direction: column;
         align-items: center;
         // background-color: white;
@@ -523,8 +523,8 @@
         margin: 0px 30px;
         // padding: 20px;
         // max-height: 300px;
-        box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3),
-          0 10px 15px rgba(0, 0, 0, 0.568);
+        box-shadow: 0 14px 22px rgba(0, 0, 0, 0.3),
+          0 5px 10px rgba(0, 0, 0, 0.568);
 
         .text-header {
           display: flex;
