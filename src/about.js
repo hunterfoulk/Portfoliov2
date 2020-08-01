@@ -55,11 +55,11 @@ export default function About() {
             </div>
             <div className="skill-description">
               <p>
-                I believe React to be the most power and easy to use javascript
-                library there is. I love to work in it and write most of my
-                projects i develop with it. I admire the developers at facebook
-                for inovating the web language with such a great library. It's
-                definitely my specialty.
+                I believe React to be the most powerful and easy to use
+                javascript library there is. I love to work in it and write most
+                of my projects i develop with it. I admire the developers at
+                facebook for inovating the web language with such a great
+                library. It's definitely my specialty.
               </p>
             </div>
           </div>
